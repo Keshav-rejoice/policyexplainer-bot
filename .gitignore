@@ -1,4 +1,5 @@
 # Prerequisites
+*.streamlit
 *.d
 
 # Compiled Object files
