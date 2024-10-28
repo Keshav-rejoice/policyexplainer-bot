@@ -3,6 +3,8 @@ import openai
 import os
 import streamlit as st
 import os
+import nltk
+nltk.download('punkt')
 from openai import OpenAI
 import base64
 import json
