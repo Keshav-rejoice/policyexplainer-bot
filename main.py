@@ -85,6 +85,14 @@ metadata=ToolMetadata(
 llm = OpenAI(model="gpt-4o-2024-08-06", temperature=0)
 agent = ReActAgent.from_tools([query_engine_tool], llm=llm, verbose=True)
  
+prompt_for_react_agent = f"""You are given the role of a Policy agent expert.You are given a query by a user and some tools. You will use the the tools to give answer in easy to understand.
+User's query: {{user_query}}.
+
+Your response:
+
+"""
+
+
 
 
 if prompt := st.chat_input("What is up?"):
