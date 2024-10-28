@@ -30,7 +30,7 @@ from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.agent.openai import OpenAIAgent
 from llama_index.core.agent import ReActAgent
 from llama_index.core.tools.function_tool import FunctionTool
-st.title("pOLICY BOT")
+st.title("POLICY BOT")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
