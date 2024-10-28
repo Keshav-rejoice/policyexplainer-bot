@@ -64,6 +64,7 @@ Settings.chunk_size = 512
 
 settings = Settings.embed_model = OpenAIEmbedding()
 index = VectorStoreIndex.from_documents(documents, vector_store=vector_store,settings=settings)
+
 query_engine = RetrieverQueryEngine.from_args(
 retriever=index.as_retriever(similarity_top_k=10),
 node_postprocessors=[SimilarityPostprocessor(similarity_cutoff=0.7)],
