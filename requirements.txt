@@ -6,6 +6,4 @@ pinecone
 llama-index-vector-stores-pinecone
 yfinance
 openai
-pypdf
-fitz
-frontend
+pymupdf
